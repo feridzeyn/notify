@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin h1_text {
+    font-size: 22px;
+    line-height: 18px;
+    color: #222222;
+    font-weight: 600;
+    font-family: "Raleway";
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+@mixin p_text {
+    width: 300px;
+    height: 122px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #848484;
+    font-family: "Helvetica Neue";
+    
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+header {
+    background-image: url(../img/img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .general {
+        display: flex;
+        justify-content: space-between;
+
+        .gnrl-frst {
+            padding-top: 170px;
+
+            img {
+                width: 170px;
+                height: 60px;
+                margin-bottom: 40px;
+            }
+
+            h1 {
+                width: 450px;
+                font-size: 24px;
+                line-height: 36px;
+                color: #ffffff;
+                font-weight: 500;
+                font-family: "Helvetica Neue";
+                margin-bottom: 25px;
+            }
+
+            .icon {
+                ul {
+                    display: flex;
+
+                    li {
+                        display: inline-block;
+                        width: 52px;
+                        height: 52px;
+                        border-radius: 26px;
+                        background-color: #39271e;
+                        margin-right: 15px;
+                        position: relative;
+                    }
+
+                    li:last-of-type {
+                        display: inline-block;
+                        width: 52px;
+                        height: 52px;
+                        border-radius: 26px;
+                        background-color: #2ecc71;
+
+                        position: relative;
+                    }
+
+                    i {
+                        width: 35px;
+                        height: 35px;
+                        font-size: 24px;
+                        color: #f4f4f4;
+                        position: absolute;
+                        top: 27%;
+                        left: 30%;
+
+
+                        .cursor {
+                            width: 20px;
+                            height: 25px;
+                            color: #f4f4f4;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            color: red;
+                        }
+
+                    }
+
+
+
+                }
+            }
+        }
+
+        .gnrl-scnd {
+            padding-top: 100px;
+            position: relative;
+
+            .mini {
+                width: 165px;
+                height: 245px;
+                position: absolute;
+                top: 166px;
+                left: 66px;
+            }
+        }
+    }
+}
+
+.first {
+
+    .section-frst {
+        display: flex;
+        justify-content: space-between;
+text-align: center;
+        padding-top: 60px;
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #2dcb71;
+            margin: auto;
+            position: relative;
+
+
+
+            i {
+                font-size: 48px;
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .theme {
+
+
+            h1 {
+                @include h1_text();
+            }
+            p {
+                @include p_text();
+            }
+        }
+
+        .design {
+            h1 {
+                @include h1_text();
+            }
+            p {
+                @include p_text();
+            }   
+        }
+        .reach {
+            h1 {
+                @include h1_text();
+            }
+            p {
+                @include p_text();
+            }   
+        }
+    }
+}
