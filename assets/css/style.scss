@@ -38,13 +38,14 @@ header {
         display: flex;
         justify-content: space-between;
 
-        .gnrl-frst {
+        .notify {
             padding-top: 170px;
 
             img {
                 width: 170px;
                 height: 60px;
                 margin-bottom: 40px;
+                cursor: pointer;
             }
 
             h1 {
@@ -77,19 +78,7 @@ header {
                         height: 52px;
                         border-radius: 26px;
                         background-color: #2ecc71;
-
                         position: relative;
-                    }
-
-                    i {
-                        width: 35px;
-                        height: 35px;
-                        font-size: 24px;
-                        color: #f4f4f4;
-                        position: absolute;
-                        top: 27%;
-                        left: 30%;
-
 
                         .cursor {
                             width: 20px;
@@ -98,10 +87,33 @@ header {
                             position: absolute;
                             top: 50%;
                             left: 50%;
-                            color: red;
+                            color: rgb(8, 8, 8);
+                            cursor: pointer;
                         }
-
                     }
+                    #apple, #windows, #robot   {
+                        width: 35px;
+                        height: 35px;
+                        font-size: 24px;
+                        color: #f4f4f4;
+                        cursor: pointer;
+                    }
+                    #apple{
+                        position: absolute;
+                        top: 22%;
+                        left: 33%;
+                    }
+                    #windows{
+                        position: absolute;
+                        top: 22%;
+                        left: 33%; 
+                    }
+                    #robot{
+                        position: absolute;
+                        top: 24%;
+                        left: 23%; 
+                    }
+                  
 
 
 
@@ -109,7 +121,7 @@ header {
             }
         }
 
-        .gnrl-scnd {
+        .card-apple {
             padding-top: 100px;
             position: relative;
 
@@ -124,9 +136,9 @@ header {
     }
 }
 
-.first {
+.function {
 
-    .section-frst {
+    .edit {
         display: flex;
         justify-content: space-between;
 text-align: center;

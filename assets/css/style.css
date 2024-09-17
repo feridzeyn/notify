@@ -18,15 +18,16 @@ header .general {
   display: flex;
   justify-content: space-between;
 }
-header .general .gnrl-frst {
+header .general .notify {
   padding-top: 170px;
 }
-header .general .gnrl-frst img {
+header .general .notify img {
   width: 170px;
   height: 60px;
   margin-bottom: 40px;
+  cursor: pointer;
 }
-header .general .gnrl-frst h1 {
+header .general .notify h1 {
   width: 450px;
   font-size: 24px;
   line-height: 36px;
@@ -35,10 +36,10 @@ header .general .gnrl-frst h1 {
   font-family: "Helvetica Neue";
   margin-bottom: 25px;
 }
-header .general .gnrl-frst .icon ul {
+header .general .notify .icon ul {
   display: flex;
 }
-header .general .gnrl-frst .icon ul li {
+header .general .notify .icon ul li {
   display: inline-block;
   width: 52px;
   height: 52px;
@@ -47,7 +48,7 @@ header .general .gnrl-frst .icon ul li {
   margin-right: 15px;
   position: relative;
 }
-header .general .gnrl-frst .icon ul li:last-of-type {
+header .general .notify .icon ul li:last-of-type {
   display: inline-block;
   width: 52px;
   height: 52px;
@@ -55,29 +56,43 @@ header .general .gnrl-frst .icon ul li:last-of-type {
   background-color: #2ecc71;
   position: relative;
 }
-header .general .gnrl-frst .icon ul i {
-  width: 35px;
-  height: 35px;
-  font-size: 24px;
-  color: #f4f4f4;
-  position: absolute;
-  top: 27%;
-  left: 30%;
-}
-header .general .gnrl-frst .icon ul i .cursor {
+header .general .notify .icon ul li:last-of-type .cursor {
   width: 20px;
   height: 25px;
   color: #f4f4f4;
   position: absolute;
   top: 50%;
   left: 50%;
-  color: red;
+  color: rgb(8, 8, 8);
+  cursor: pointer;
 }
-header .general .gnrl-scnd {
+header .general .notify .icon ul #apple, header .general .notify .icon ul #windows, header .general .notify .icon ul #robot {
+  width: 35px;
+  height: 35px;
+  font-size: 24px;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+header .general .notify .icon ul #apple {
+  position: absolute;
+  top: 22%;
+  left: 33%;
+}
+header .general .notify .icon ul #windows {
+  position: absolute;
+  top: 22%;
+  left: 33%;
+}
+header .general .notify .icon ul #robot {
+  position: absolute;
+  top: 24%;
+  left: 23%;
+}
+header .general .card-apple {
   padding-top: 100px;
   position: relative;
 }
-header .general .gnrl-scnd .mini {
+header .general .card-apple .mini {
   width: 165px;
   height: 245px;
   position: absolute;
@@ -85,13 +100,13 @@ header .general .gnrl-scnd .mini {
   left: 66px;
 }
 
-.first .section-frst {
+.function .edit {
   display: flex;
   justify-content: space-between;
   text-align: center;
   padding-top: 60px;
 }
-.first .section-frst .icon {
+.function .edit .icon {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -99,7 +114,7 @@ header .general .gnrl-scnd .mini {
   margin: auto;
   position: relative;
 }
-.first .section-frst .icon i {
+.function .edit .icon i {
   font-size: 48px;
   color: white;
   position: absolute;
@@ -107,7 +122,7 @@ header .general .gnrl-scnd .mini {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.first .section-frst .theme h1 {
+.function .edit .theme h1 {
   font-size: 22px;
   line-height: 18px;
   color: #222222;
@@ -116,7 +131,7 @@ header .general .gnrl-scnd .mini {
   margin-bottom: 40px;
   margin-top: 30px;
 }
-.first .section-frst .theme p {
+.function .edit .theme p {
   width: 300px;
   height: 122px;
   font-size: 16px;
@@ -124,7 +139,7 @@ header .general .gnrl-scnd .mini {
   color: #848484;
   font-family: "Helvetica Neue";
 }
-.first .section-frst .design h1 {
+.function .edit .design h1 {
   font-size: 22px;
   line-height: 18px;
   color: #222222;
@@ -133,7 +148,7 @@ header .general .gnrl-scnd .mini {
   margin-bottom: 40px;
   margin-top: 30px;
 }
-.first .section-frst .design p {
+.function .edit .design p {
   width: 300px;
   height: 122px;
   font-size: 16px;
@@ -141,7 +156,7 @@ header .general .gnrl-scnd .mini {
   color: #848484;
   font-family: "Helvetica Neue";
 }
-.first .section-frst .reach h1 {
+.function .edit .reach h1 {
   font-size: 22px;
   line-height: 18px;
   color: #222222;
@@ -150,7 +165,7 @@ header .general .gnrl-scnd .mini {
   margin-bottom: 40px;
   margin-top: 30px;
 }
-.first .section-frst .reach p {
+.function .edit .reach p {
   width: 300px;
   height: 122px;
   font-size: 16px;
